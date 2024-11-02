@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lord of the Rings Grouping</title>
+    <link rel="stylesheet" href="lotr.css">
+</head>
+<body>
+
+    <div class="flex-container">
+
+        <button id="positionButton">Get Position</button>
+
+        <h2 id="header">Position: 
+            <h2 id="position"></h2>
+        </h2>
+
+        <div class="hobbits panel" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <p style="width: 100%">Hobbits</p></div>
+
+        <div class="heroes panel" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <p style="width: 100%">Heroes</p></div>
+
+        <div class="villains panel" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <p style="width: 100%">Villains</p></div>
+
+        <div class="lower-panel" style="width: 100%" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <p style="width: 100%">Characters</p>
+            <img id="aragorn" src="images/aragorn.jpg" alt="aragorn" ondragstart="drag(event)" draggable="true">
+            <img id="frodo" src="images/frodo.jpg" alt="frodo" ondragstart="drag(event)" draggable="true">
+            <img id="gandalf" src="images/gandalf.jpg" alt="gandalf" ondragstart="drag(event)" draggable="true">
+            <img id="gimli" src="images/gimli.jpg" alt="gimli" ondragstart="drag(event)" draggable="true">
+            <img id="gollum" src="images/gollum.jpg" alt="gollum" ondragstart="drag(event)" draggable="true">
+            <img id="legolas" src="images/legolas.jpg" alt="legolas" ondragstart="drag(event)" draggable="true">
+            <img id="merry" src="images/merry.jpg" alt="merry" ondragstart="drag(event)" draggable="true">
+            <img id="pippin" src="images/pippin.jpg" alt="pippin" ondragstart="drag(event)" draggable="true">
+            <img id="sam" src="images/sam.jpg" alt="sam" ondragstart="drag(event)" draggable="true">
+            <img id="saruman" src="images/saruman.jpg" alt="saruman" ondragstart="drag(event)" draggable="true">
+            <img id="sauron" src="images/sauron2.png" alt="sauron" ondragstart="drag(event)" draggable="true">
+            <img id="witch_king" src="images/witch_king.jpg" alt="witch king" ondragstart="drag(event)" draggable="true">
+        </div>
+
+    </div>
+
+    <script src="lotr.js"></script>
+</body>
+</html>
